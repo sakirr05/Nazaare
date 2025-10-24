@@ -414,3 +414,9 @@ body.dark-mode .download-btn {
 body.dark-mode .download-btn:hover {
   background-color: #7986cb;
 }
+.error-message {
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}

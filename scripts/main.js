@@ -24,6 +24,14 @@ fetch("data/photos.json")
   })
   .catch(err => {
     console.error("Error loading photos:", err);
+
+    //displays the error msg if the img fails to load
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = `
+    <div class="error-message">
+      Failed to load photos. Please refresh the page or try again later.
+    </div>
+  `;
   });
 
 // Search handler
