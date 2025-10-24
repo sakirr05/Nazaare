@@ -24,7 +24,19 @@ fetch("data/photos.json")
   })
   .catch(err => {
     console.error("Error loading photos:", err);
-  });
+
+    // displays the error msg if the img fails to load
+GALLERY.innerHTML = `
+    <section class="error-screen">
+      <img src="./assets/error.svg" alt="Error Illustration" class="error-vector" />
+      <h2>Oops! Something went wrong</h2>
+      <p>We couldn’t load the photos right now. Please try again later.</p>
+      <button id="retry-btn">Retry</button>
+    </section>
+  `;
+
+document.getElementById("retry-btn").addEventListener("click", () => location.reload());
+});
 
 // Search handler
 SEARCH.addEventListener("input", (e) => {
