@@ -36,7 +36,22 @@ SEARCH.addEventListener("input", (e) => {
   );
   currentPage = 1;
   renderGallery();
+
+ //Show a friendly message when no search results or gallery items are found.
+  const gallery = document.getElementById("gallery"); 
+  const noResultMsg = document.getElementById("no-result-msg");
+  if (filteredPhotos.length === 0) {
+    if (!noResultMsg) {
+      const msg = document.createElement("div");
+      msg.id = "no-result-msg";
+      msg.textContent = "No images at the moment! 🚫 Try another search.";
+      gallery.appendChild(msg);
+    }
+  } else if (noResultMsg) {
+    noResultMsg.remove();
+  }
 });
+
 
 // Extract EXIF metadata
 function extractExif(photo) {
