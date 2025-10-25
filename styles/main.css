@@ -463,3 +463,75 @@ body.dark-mode .download-btn:hover {
 
 /*======Dark mode=======*/
 body.dark-mode .empty-img { filter: brightness(0.9) saturate(0.9) contrast(1.05); }
+/* Error screen  */
+/* ================== Full Page Error Screen ================== */
+.error-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fafafa;
+  gap: 1.5rem;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.error-vector {
+  width: 60vw;
+  max-width: 500px;
+  height: auto;
+  user-select: none;
+}
+
+.error-screen h2 {
+  font-size: 2rem;
+  color: #d32f2f;
+}
+
+.error-screen p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+}
+
+#retry-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#retry-btn:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Dark mode styles */
+body.dark-mode .error-screen {
+  background-color: #121212;
+}
+
+body.dark-mode .error-screen h2 {
+  color: #ef5350;
+}
+
+body.dark-mode .error-screen p {
+  color: #ccc;
+}
+
+body.dark-mode #retry-btn {
+  background-color: #ef5350;
+}
+
+body.dark-mode #retry-btn:hover {
+  background-color: #e57373;
+}
+
+
