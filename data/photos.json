@@ -89,5 +89,40 @@
     "description": "Flying above the clouds in the clear blue sky.",
     "tags": ["clouds","nature","sky", "blue"],
     "location": "New Delhi, India"
-  }
+  },
+    {
+  "filename": "sunset-glory.jpg",
+  "title": "Sunset Glory",
+  "description": "A calm sunset behind the mountains.",
+  "location": "Manali, India",
+  "tags": ["sunset", "mountains", "nature"]
+  },
+  {
+  "filename": "forest-trail.jpg",
+  "title": "Forest Trail",
+  "description": "A narrow path winding through the dense pine forest just after rain.",
+  "location": "Coorg, India",
+  "tags": ["forest", "nature", "greenery"]
+},
+{
+  "filename": "city-lights.jpg",
+  "title": "City Lights",
+  "description": "A bright night skyline reflecting over the calm river waters.",
+  "location": "Mumbai, India",
+  "tags": ["cityscape", "night", "lights"]
+},
+{
+  "filename": "desert-dunes.jpg",
+  "title": "Desert Dunes",
+  "description": "Golden sand dunes shimmering under the afternoon sun.",
+  "location": "Jaisalmer, India",
+  "tags": ["desert", "sand", "landscape"]
+},
+{
+  "filename": "monsoon-mist.jpg",
+  "title": "Monsoon Mist",
+  "description": "Low clouds rolling over tea gardens after an evening shower.",
+  "location": "Munnar, India",
+  "tags": ["monsoon", "clouds", "tea-estate"]
+}
 ]
